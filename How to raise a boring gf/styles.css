@@ -1,0 +1,230 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Slideshow Styles */
+
+  .slideshow-container {
+    position: relative;
+    height: 800px;
+    width: 500px;
+    overflow: hidden;
+    margin-top: 8%;
+    align-items: center;
+    align-content: center;
+    margin-left: 31%;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+    align-self: center;
+    
+}
+
+.slideshow-container .active {
+    display: block;
+}
+
+.slideshow-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+}
+
+.slideshow-controls button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 5s ease-in-out;
+}
+
+.slideshow-controls button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+  
+  /* Anime Details Styles */
+  
+  .anime-details {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .anime-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .anime-genre {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-button {
+    margin-bottom: 20px;
+  }
+  
+  .opinion-btn:active {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+ 
+  
+   .opinion-btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 7s ease-in-out;
+  }
+  #opinion-text {
+    width: 100%;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: larger;
+  }
+  
+  
+ /* Fixed Header Styles */
+
+.fixed-header {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    align-content: center;
+  }
+  
+  .fixed-header .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .fixed-header .logo {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .fixed-header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .fixed-header nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .fixed-header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .fixed-header nav a:last-child {
+    margin-right: 0;
+  }
+  
+  .fixed-header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .fixed-header nav a:active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .fixed-header nav a:focus {
+    outline: none;
+  }
+  
+
+  /* Instructions Styles */
+  
+  .instructions {
+    margin-bottom: 30px;
+}
+
+.instruction-text {
+    font-size: 18px;
+    margin: 0;
+}
+
+.anime-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anime-list li {
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.anime-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+  
+  
+  
+  
+  /* Footer Styles */
+  
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  

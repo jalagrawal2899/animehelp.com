@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .card-img {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      animation: slideShow 10s infinite;
+    }
+
+    @keyframes slideShow {
+      0% {
+        opacity: 1;
+      }
+      20% {
+        opacity: 0;
+      }
+      33.33% {
+        opacity: 0;
+      }
+      53.33% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="fixed-header">
+    <div class="header-content">
+      <a href="#" class="logo">
+        <img src="logo.jpg" alt="Logo">
+      </a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Genre</a>
+        <a href="#">About Us</a>
+        <a href="#">All Anime</a>
+      </nav>
+    </div>
+  </header>
+
+  <header class="second-header">
+    <h1>All Anime</h1>
+  </header>
+
+  <div class="container">
+    <div class="card-container">
+      <div class="card" onclick="redirectTo('anime1.html')">
+        <div class="card-img">
+          <img src="anime1-1.jpg" alt="Anime 1">
+          <img src="anime1-2.jpg" alt="Anime 1">
+          <img src="anime1-3.jpg" alt="Anime 1">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Anime 1</h3>
+          <div class="card-details">
+            <p>Details about Anime 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="redirectTo('anime2.html')">
+        <div class="card-img">
+          <img src="anime2-1.jpg" alt="Anime 2">
+          <img src="anime2-2.jpg" alt="Anime 2">
+          <img src="anime2-3.jpg" alt="Anime 2">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Anime 2</h3>
+          <div class="card-details">
+            <p>Details about Anime 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="redirectTo('anime3.html')">
+        <div class="card-img">
+          <img src="anime3-1.jpg" alt="Anime 3">
+          <img src="anime3-2.jpg" alt="Anime 3">
+          <img src="anime3-3.jpg" alt="Anime 3">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Anime 3</h3>
+          <div class="card-details">
+            <p>Details about Anime 3</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Anime Gallery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function redirectTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+
+</html>
